@@ -8,27 +8,32 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <header className="header">
-      <nav ClassName="nav">
-        <div className="logo">FASCO</div>
-        <div className="nav-link">
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Shop</a>
-            </li>
-            <li>
-              <a href="#">Products</a>
-            </li>
-            <li>
-              <a href="#">Pages</a>
-            </li>
-          </ul>
-        </div>
+    <header> 
+      <nav className="navbar">
+        <div className="navbar__logo">FASCO</div>
+
+        <ul className="navbar__menu">
+          <li className="navbar__item">
+            <a href="#" className="navbar__link">Home</a>
+          </li>
+
+          <li className="navbar__item">
+            <a href="#" className="navbar__link">Shop</a>
+          </li>
+
+          <li className="navbar__item">
+            <a href="#" className="navbar__link">Products</a>
+            <span className="navbar__link"></span>
+          </li>
+
+          <li className="navbar__item navbar__item--dropdown">
+            <a href="#" className="navbar__link">Pages</a>
+            <span className="navbar__arrow">▾</span>
+          </li>
+        </ul>
+
         <div className="actions">
-          <a href=""><SearchIcon /></a>
+          <SearchIcon />
           <ProfileIcon />
           <StarIcon />
           <BasketIcon />
@@ -37,3 +42,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;
