@@ -1,83 +1,43 @@
 import "./Footer.css";
-import Boy from "./images/footer.boy.png";
-import Girl from "./images/footer.girl.png";
-
+import Boy from "@/components/layouts/Footer/images/footer.boy.png";
+import Girl from "@/components/layouts/Footer/images/footer.girl.png";
 
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="footer-hero">
+        <img src={Boy} alt="boy" className="hero-img hero-img-left" />
 
-      <div className="footer__top">
-        <div className="footer__image footer__image--left">
-          <img src={Boy} alt="boy" />
-        </div>
-
-        <div className="footer__content">
-          <h2 className="footer__title">Subscribe to our newsletter</h2>
-          <p className="footer__subtitle">
-            Get weekly updates about new products & discounts
+        <div className="hero-content">
+          <h2>Subscribe To Our Newsletter</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+            sollicitudin
           </p>
 
-          <div className="footer__input-group">
-            <input
-              type="email"
-              className="footer__input"
-              placeholder="Enter your email"
-            />
-            <button className="footer__button">Subscribe</button>
+          <div className="hero-input-box">
+            <input type="email" placeholder="michael@ymail.com" />
           </div>
+
+          <button className="hero-btn">Subscribe Now</button>
         </div>
 
-        <div className="footer__image footer__image--right">
-          <img src={Girl} alt="girl" />
-        </div>
+        <img src={Girl} alt="girl" className="hero-img hero-img-right" />
       </div>
 
-      <div className="footer__bottom">
-        <div className="footer__columns">
+      <div className="footer-bottom">
+        <span className="footer-logo">FASCO</span>
 
-          <div className="footer__column">
-            <h3 className="footer__heading">Company</h3>
-            <ul className="footer__list">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </div>
-
-          <div className="footer__column">
-            <h3 className="footer__heading">Support</h3>
-            <ul className="footer__list">
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">Shipping Info</a></li>
-            </ul>
-          </div>
-
-          <div className="footer__column">
-            <h3 className="footer__heading">Products</h3>
-            <ul className="footer__list">
-              <li><a href="#">New Arrivals</a></li>
-              <li><a href="#">Best Sellers</a></li>
-              <li><a href="#">Sale</a></li>
-            </ul>
-          </div>
-
-          <div className="footer__column">
-            <h3 className="footer__heading">Contact</h3>
-            <ul className="footer__list">
-              <li>Email: info@fasco.com</li>
-              <li>Phone: +1 234 567 890</li>
-              <li>Location: Los Angeles</li>
-            </ul>
-          </div>
-
-        </div>
-
-    
-
+        <ul className="footer-links">
+          <li>Support Center</li>
+          <li>Invoicing</li>
+          <li>Contract</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>FAQs</li>
+        </ul>
       </div>
-
     </footer>
   );
 };

@@ -1,0 +1,161 @@
+.cart-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+.cart-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cart-header h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.breadcrumb {
+  margin-top: 10px;
+  color: #777;
+  font-size: 14px;
+}
+
+.breadcrumb span {
+  margin: 0 5px;
+}
+
+/* TABLE HEAD */
+.cart-table-head {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr 1fr;
+  padding: 10px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0 20px;
+}
+
+/* PRODUCT ROW */
+.cart-item {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-product {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cart-product img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.cart-product-info h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.color {
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #888;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* PRICE */
+.cart-price {
+  font-size: 16px;
+}
+
+/* QUANTITY */
+.cart-qty {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cart-qty button {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-qty span {
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* TOTAL */
+.cart-total {
+  font-size: 16px;
+}
+
+/* WRAP OPTION */
+.wrap-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #555;
+}
+
+.divider {
+  margin: 20px 0;
+}
+
+/* SUBTOTAL */
+.subtotal-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtotal-box p {
+  font-size: 16px;
+}
+
+.subtotal-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-btn {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 14px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* VIEW CART */
+.view-cart {
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 15px;
+}
