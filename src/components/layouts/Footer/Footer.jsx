@@ -1,6 +1,7 @@
 import "./Footer.css";
-import Boy from "../../../assets/footer.boy.png";
-import Girl from "../../../assets/footer.girl.png";
+import Boy from "./images/footer.boy.png";
+import Girl from "./images/footer.girl.png";
+
 
 const Footer = () => {
   return (
