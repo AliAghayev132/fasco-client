@@ -1,6 +1,10 @@
+// Styles
+// TODO: Modulyar Css
 import "./Footer.css";
-import Boy from "@/components/layouts/Footer/images/footer.boy.png";
-import Girl from "@/components/layouts/Footer/images/footer.girl.png";
+
+// Images
+import Boy from "@/assets/images/footer.boy.png";
+import Girl from "@/assets/images/footer.girl.png";
 
 const Footer = () => {
   return (

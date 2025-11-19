@@ -6,7 +6,7 @@ import {
 } from "react-router"
 
 // Pages
-import CartPage from "@/pages/Cart/CartPage"
+import { CartPage } from "@/pages/Cart/CartPage"
 import { HomePage } from "@/pages/Home/HomePage"
 import { ShopPage } from "@/pages/Shop/ShopPage"
 import { ProductPage } from "@/pages/Product/ProductPage"

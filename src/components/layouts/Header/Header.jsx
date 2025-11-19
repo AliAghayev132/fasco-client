@@ -1,24 +1,39 @@
+// Icons
 import {
-  SearchIcon,
-  ProfileIcon,
   StarIcon,
+  SearchIcon,
   BasketIcon,
+  ProfileIcon,
 } from "@/components/icons";
+// Styles
+
+// TODO: Modularyar Css keçirələcək
+
 import "./Header.css";
 
+
+// React Router
+import { Link, useLocation } from "react-router";
+
+
 export const Header = () => {
+  const location = useLocation();
+
+  const handleNavbarClass = path => `navbar__link ${location.pathname == path && "active"}`;
+
+
   return (
-    <header> 
+    <header>
       <nav className="navbar">
         <div className="navbar__logo">FASCO</div>
 
         <ul className="navbar__menu">
           <li className="navbar__item">
-            <a href="#" className="navbar__link">Home</a>
+            <Link to="/" className={handleNavbarClass("/")}>Home</Link>
           </li>
 
           <li className="navbar__item">
-            <a href="#" className="navbar__link">Shop</a>
+            <Link to="/shop" className={handleNavbarClass("/shop")}>Shop</Link>
           </li>
 
           <li className="navbar__item">
@@ -36,7 +51,9 @@ export const Header = () => {
           <SearchIcon />
           <ProfileIcon />
           <StarIcon />
-          <BasketIcon />
+          <Link to="cart">
+            <BasketIcon />
+          </Link>
         </div>
       </nav>
     </header>

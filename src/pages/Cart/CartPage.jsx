@@ -1,8 +1,13 @@
+// React
 import React, { useState } from "react";
-import "./CartPage.css";
-import productImg from "./images/cart.girl.png";
 
-export default function CartPage() {
+// Images
+import ProductImg from "@/assets/images/cart.girl.png";
+
+// TODO: Modulyar Css
+import "./CartPage.css";
+
+export const CartPage = () => {
   const [items, setItems] = useState([
     {
       id: 1,
@@ -10,7 +15,7 @@ export default function CartPage() {
       color: "Red",
       price: 14.9,
       qty: 1,
-      img: productImg,
+      img: ProductImg,
     },
   ]);
 
