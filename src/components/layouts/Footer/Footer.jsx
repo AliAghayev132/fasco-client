@@ -6,7 +6,7 @@ import "./Footer.css";
 import Boy from "@/assets/images/footer.boy.png";
 import Girl from "@/assets/images/footer.girl.png";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-hero">
@@ -45,5 +45,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
