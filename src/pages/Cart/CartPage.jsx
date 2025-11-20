@@ -1,11 +1,10 @@
-// React
 import React, { useState } from "react";
 
 // Images
 import ProductImg from "@/assets/images/cart.girl.png";
 
-// TODO: Modulyar Css
-import "./CartPage.css";
+// CSS Module
+import styles from "./CartPage.module.css";
 
 export const CartPage = () => {
   const [items, setItems] = useState([
@@ -48,52 +47,50 @@ export const CartPage = () => {
   const formatMoney = (n) => `$${n.toFixed(2)}`;
 
   const handleCheckout = () => {
-    // Placeholder for checkout flow
     alert(`Checking out — total: ${formatMoney(subtotal())}`);
   };
 
   return (
-    <div className="cart-page">
-      <div className="cart-header">
+    <div className={styles.cartPage}>
+      <div className={styles.cartHeader}>
         <h1>Shopping Cart</h1>
-        <p className="breadcrumb">
+        <p className={styles.breadcrumb}>
           Home <span>›</span> Your Shopping Cart
         </p>
       </div>
 
-      <div className="cart-table-head">
+      <div className={styles.cartTableHead}>
         <span>Product</span>
         <span>Price</span>
         <span>Quantity</span>
         <span>Total</span>
       </div>
 
-      <hr />
+      <hr className={styles.hr} />
 
       {items.length === 0 && (
-        <p className="empty-cart">Your cart is empty.</p>
+        <p className={styles.emptyCart}>Your cart is empty.</p>
       )}
 
       {items.map((item) => (
-        <div className="cart-item" key={item.id}>
-          <div className="cart-product">
+        <div className={styles.cartItem} key={item.id}>
+          <div className={styles.cartProduct}>
             <img src={item.img} alt={item.title} />
-            <div className="cart-product-info">
+            <div className={styles.cartProductInfo}>
               <h3>{item.title}</h3>
-              <p className="color">Color : {item.color}</p>
+              <p className={styles.color}>Color : {item.color}</p>
               <button
-                className="remove-btn"
+                className={styles.removeBtn}
                 onClick={() => removeItem(item.id)}
-                aria-label={`Remove ${item.title}`}
               >
                 Remove
               </button>
             </div>
           </div>
 
-          <div className="cart-price">{formatMoney(item.price)}</div>
+          <div className={styles.cartPrice}>{formatMoney(item.price)}</div>
 
-          <div className="cart-qty">
+          <div className={styles.cartQty}>
             <button onClick={() => decrement(item.id)} aria-label="Decrease">
               -
             </button>
@@ -103,19 +100,20 @@ export const CartPage = () => {
             </button>
           </div>
 
-          <div className="cart-total">{formatMoney(item.price * item.qty)}</div>
+          <div className={styles.cartTotal}>
+            {formatMoney(item.price * item.qty)}
+          </div>
         </div>
       ))}
 
-      <hr className="divider" />
+      <hr className={styles.divider} />
 
-      <div className="wrap-option">
+      <div className={styles.wrapOption}>
         <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
           <input
             type="checkbox"
             checked={wrap}
             onChange={() => setWrap((v) => !v)}
-            aria-checked={wrap}
           />
           <span>
             For <strong>{formatMoney(wrapCost)}</strong> Please Wrap The Product
@@ -123,18 +121,18 @@ export const CartPage = () => {
         </label>
       </div>
 
-      <hr className="divider" />
+      <hr className={styles.divider} />
 
-      <div className="subtotal-box">
+      <div className={styles.subtotalBox}>
         <p>Subtotal</p>
         <h3>{formatMoney(subtotal())}</h3>
       </div>
 
-      <button className="checkout-btn" onClick={handleCheckout}>
+      <button className={styles.checkoutBtn} onClick={handleCheckout}>
         Checkout
       </button>
 
-      <p className="view-cart">View Cart</p>
+      <p className={styles.viewCart}>View Cart</p>
     </div>
   );
-}
+};

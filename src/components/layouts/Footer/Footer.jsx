@@ -1,6 +1,5 @@
 // Styles
-// TODO: Modulyar Css
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 // Images
 import Boy from "@/assets/images/footer.boy.png";
@@ -8,11 +7,15 @@ import Girl from "@/assets/images/footer.girl.png";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-hero">
-        <img src={Boy} alt="boy" className="hero-img hero-img-left" />
+    <footer className={styles.footer}>
+      <div className={styles["footer__hero"]}>
+        <img
+          src={Boy}
+          alt="boy"
+          className={`${styles["footer__hero-img"]} ${styles["footer__hero-img--left"]}`}
+        />
 
-        <div className="hero-content">
+        <div className={styles["footer__hero-content"]}>
           <h2>Subscribe To Our Newsletter</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
@@ -20,20 +23,24 @@ export const Footer = () => {
             sollicitudin
           </p>
 
-          <div className="hero-input-box">
+          <div className={styles["footer__input-box"]}>
             <input type="email" placeholder="michael@ymail.com" />
           </div>
 
-          <button className="hero-btn">Subscribe Now</button>
+          <button className={styles["footer__btn"]}>Subscribe Now</button>
         </div>
 
-        <img src={Girl} alt="girl" className="hero-img hero-img-right" />
+        <img
+          src={Girl}
+          alt="girl"
+          className={`${styles["footer__hero-img"]} ${styles["footer__hero-img--right"]}`}
+        />
       </div>
 
-      <div className="footer-bottom">
-        <span className="footer-logo">FASCO</span>
+      <div className={styles["footer__bottom"]}>
+        <span className={styles["footer__logo"]}>FASCO</span>
 
-        <ul className="footer-links">
+        <ul className={styles["footer__links"]}>
           <li>Support Center</li>
           <li>Invoicing</li>
           <li>Contract</li>

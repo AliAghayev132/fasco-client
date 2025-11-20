@@ -3,7 +3,8 @@
   background: #fff;
 }
 
-.footer-hero {
+/* HERO */
+.footer__hero {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -14,38 +15,39 @@
   justify-content: center;
 }
 
-.hero-img {
+/* HERO IMAGES */
+.footer__hero-img {
   position: absolute;
   bottom: 0;
   height: auto;
   z-index: 1;
 }
 
-.hero-img-left {
-  left: -200px;              
-  width: 500px;            
+.footer__hero-img--left {
+  left: -200px;
+  width: 500px;
 }
 
-
-.hero-img-right {
-  right: 90px;             
-  width: 500px;            
+.footer__hero-img--right {
+  right: 90px;
+  width: 500px;
 }
 
-.hero-content {
+/* HERO CONTENT */
+.footer__hero-content {
   text-align: center;
   max-width: 550px;
   z-index: 10;
 }
 
-.hero-content h2 {
+.footer__hero-content h2 {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #333;
 }
 
-.hero-content p {
+.footer__hero-content p {
   font-size: 15px;
   color: #666;
   line-height: 1.7;
@@ -53,7 +55,7 @@
 }
 
 /* EMAIL BOX */
-.hero-input-box {
+.footer__input-box {
   width: 100%;
   background: #fff;
   padding: 20px 24px;
@@ -62,7 +64,7 @@
   margin-bottom: 30px;
 }
 
-.hero-input-box input {
+.footer__input-box input {
   width: 100%;
   border: none;
   outline: none;
@@ -70,7 +72,8 @@
   color: #777;
 }
 
-.hero-btn {
+/* BUTTON */
+.footer__btn {
   border: none;
   padding: 14px 34px;
   background: #000;
@@ -78,33 +81,34 @@
   border-radius: 8px;
   cursor: pointer;
   font-size: 15px;
-  box-shadow: 0px 6px 20px rgba(0,0,0,0.18);
-  transition: .2s;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.18);
+  transition: 0.2s;
 }
 
-.hero-btn:hover {
+.footer__btn:hover {
   background: #222;
 }
 
-.footer-bottom {
+/* BOTTOM SECTION */
+.footer__bottom {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   border-top: 1px solid #eee;
-  padding: 30px 40px;
+  padding: 100px 40px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer-logo {
+.footer__logo {
   font-size: 22px;
   font-weight: 700;
   color: #000;
 }
 
-.footer-links {
+.footer__links {
   display: flex;
   gap: 40px;
   list-style: none;
@@ -112,17 +116,18 @@
   color: #555;
 }
 
-.footer-links li {
+.footer__links li {
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-.footer-links li:hover {
+.footer__links li:hover {
   color: #000;
 }
 
+/* RESPONSIVE */
 @media (max-width: 1100px) {
-  .hero-img {
+  .footer__hero-img {
     display: none;
   }
 }

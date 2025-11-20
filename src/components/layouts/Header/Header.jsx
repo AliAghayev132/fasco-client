@@ -5,53 +5,43 @@ import {
   BasketIcon,
   ProfileIcon,
 } from "@/components/icons";
+
 // Styles
-
-// TODO: Modularyar Css keçirələcək
-
-import "./Header.css";
-
+import styles from "./Header.module.css";
 
 // React Router
 import { Link, useLocation } from "react-router";
 
-
 export const Header = () => {
   const location = useLocation();
 
-  const handleNavbarClass = path => `navbar__link ${location.pathname == path && "active"}`;
-
+  const handleNavbarClass = (path) => {
+    const isActive = location.pathname === path;
+    return `${styles["navbar__link"]} ${isActive ? styles["navbar__link--active"] : ""}`;
+  };
 
   return (
-    <header>
-      <nav className="navbar">
-        <div className="navbar__logo">FASCO</div>
+    <header className={styles.header}>
+      <nav className={styles.navbar}>
+       <div className={styles["navbar__logo"]}>
+  <Link to="/" className={styles["logo__link"]}>FASCO</Link>
+</div>
 
-        <ul className="navbar__menu">
-          <li className="navbar__item">
+        <ul className={styles["navbar__menu"]}>
+          <li className={styles["navbar__item"]}>
             <Link to="/" className={handleNavbarClass("/")}>Home</Link>
           </li>
 
-          <li className="navbar__item">
+          <li className={styles["navbar__item"]}>
             <Link to="/shop" className={handleNavbarClass("/shop")}>Shop</Link>
-          </li>
-
-          <li className="navbar__item">
-            <a href="#" className="navbar__link">Products</a>
-            <span className="navbar__link"></span>
-          </li>
-
-          <li className="navbar__item navbar__item--dropdown">
-            <a href="#" className="navbar__link">Pages</a>
-            <span className="navbar__arrow">▾</span>
           </li>
         </ul>
 
-        <div className="actions">
+        <div className={styles.actions}>
           <SearchIcon />
           <ProfileIcon />
           <StarIcon />
-          <Link to="cart">
+          <Link to="/cart">
             <BasketIcon />
           </Link>
         </div>
