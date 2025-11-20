@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .navbar__logo {
@@ -23,8 +24,16 @@
   letter-spacing: 2px;
   color: #333;
   user-select: none;
-  text-decoration: none;
+}
 
+.logo__link {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo__link:active,
+.logo__link:visited {
+  color: #333;
 }
 
 /* MENU */
@@ -35,6 +44,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  transition: right 0.3s ease;
 }
 
 .navbar__item {
@@ -48,7 +58,6 @@
   transition: color 0.2s ease;
 }
 
-/* HOVER */
 .navbar__item:hover .navbar__link {
   color: #111;
 }
@@ -82,7 +91,7 @@
 /* ACTIVE LINK */
 .navbar__link--active {
   position: relative;
-  color: #111; /* istəyə görə */
+  color: #111;
 }
 
 .navbar__link--active::after {
@@ -95,12 +104,64 @@
   background-color: #111;
   border-radius: 2px;
 }
-.logo__link {
-  text-decoration: none;
-  color: #333;
+
+/* BURGER ICON */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
 }
 
-.logo__link:active,
-.logo__link:visited {
-  color: #333; 
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar__menu {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .navbar__menu {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 200px;
+    height: calc(100% - 60px);
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .navbar__menu.active {
+    right: 0;
+  }
+
+  .actions {
+    gap: 15px;
+  }
 }

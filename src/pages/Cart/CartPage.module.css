@@ -1,161 +1,211 @@
 .cartPage {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
-  font-family: "Inter", sans-serif;
+max-width: 1100px;
+margin: 40px auto;
+padding: 0 20px;
+font-family: "Inter", sans-serif;
 }
 
 /* HEADER */
 .cartHeader {
-  text-align: center;
-  margin-bottom: 40px;
+text-align: center;
+margin-bottom: 40px;
 }
 
 .cartHeader h1 {
-  font-size: 36px;
-  font-weight: 600;
+font-size: 36px;
+font-weight: 600;
 }
 
 .breadcrumb {
-  margin-top: 10px;
-  color: #777;
-  font-size: 14px;
+margin-top: 10px;
+color: #777;
+font-size: 14px;
 }
 
 .breadcrumb span {
-  margin: 0 5px;
+margin: 0 5px;
 }
 
 /* TABLE HEAD */
 .cartTableHead {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr 1fr 1fr;
-  padding: 10px 0;
-  font-weight: 600;
-  color: #333;
+display: grid;
+grid-template-columns: 2.5fr 1fr 1fr 1fr;
+padding: 10px 0;
+font-weight: 600;
+color: #333;
 }
 
 .hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 10px 0 20px;
+border: none;
+border-top: 1px solid #ddd;
+margin: 10px 0 20px;
 }
 
 /* PRODUCT ROW */
 .cartItem {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr 1fr 1fr;
-  align-items: center;
-  margin-bottom: 20px;
+display: grid;
+grid-template-columns: 2.5fr 1fr 1fr 1fr;
+align-items: center;
+margin-bottom: 20px;
 }
 
 .cartProduct {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+display: flex;
+gap: 20px;
+align-items: center;
 }
 
 .cartProduct img {
-  width: 120px;
-  height: auto;
-  border-radius: 6px;
+width: 120px;
+height: auto;
+border-radius: 6px;
 }
 
 .cartProductInfo h3 {
-  font-size: 16px;
-  margin-bottom: 6px;
+font-size: 16px;
+margin-bottom: 6px;
 }
 
 .color {
-  color: #888;
-  margin-bottom: 8px;
+color: #888;
+margin-bottom: 8px;
 }
 
 .removeBtn {
-  background: none;
-  border: none;
-  color: #888;
-  text-decoration: underline;
-  cursor: pointer;
+background: none;
+border: none;
+color: #888;
+text-decoration: underline;
+cursor: pointer;
 }
 
 /* PRICE */
 .cartPrice {
-  font-size: 16px;
+font-size: 16px;
 }
 
 /* QUANTITY */
 .cartQty {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+display: flex;
+gap: 10px;
+align-items: center;
 }
 
 .cartQty button {
-  width: 30px;
-  height: 30px;
-  border-radius: 4px;
-  background: #eee;
-  border: none;
-  cursor: pointer;
+width: 30px;
+height: 30px;
+border-radius: 4px;
+background: #eee;
+border: none;
+cursor: pointer;
 }
 
 .cartQty span {
-  width: 30px;
-  text-align: center;
-  display: inline-block;
+width: 30px;
+text-align: center;
+display: inline-block;
 }
 
 /* TOTAL */
 .cartTotal {
-  font-size: 16px;
+font-size: 16px;
 }
 
 /* WRAP OPTION */
 .wrapOption {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #555;
+display: flex;
+align-items: center;
+gap: 12px;
+color: #555;
 }
 
 .divider {
-  margin: 20px 0;
+margin: 20px 0;
 }
 
 /* SUBTOTAL */
 .subtotalBox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .subtotalBox p {
-  font-size: 16px;
+font-size: 16px;
 }
 
 .subtotalBox h3 {
-  font-size: 20px;
-  font-weight: 600;
+font-size: 20px;
+font-weight: 600;
 }
 
 /* CHECKOUT BUTTON */
 .checkoutBtn {
-  width: 100%;
-  background: #000;
-  color: #fff;
-  padding: 14px;
-  margin: 25px 0;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 15px;
+width: 100%;
+background: #000;
+color: #fff;
+padding: 14px;
+margin: 25px 0;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 15px;
 }
 
 /* VIEW CART */
 .viewCart {
-  text-align: center;
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: 15px;
+text-align: center;
+text-decoration: underline;
+cursor: pointer;
+font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.cartTableHead,
+.cartItem {
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+
+.cartPrice,
+.cartQty,
+.cartTotal {
+text-align: right;
+}
+
+.cartProduct {
+flex-direction: column;
+align-items: flex-start;
+}
+
+.cartProduct img {
+width: 100%;
+max-width: 150px;
+}
+
+.cartQty {
+justify-content: flex-end;
+}
+
+.subtotalBox {
+flex-direction: column;
+align-items: flex-end;
+gap: 8px;
+}
+}
+
+@media (max-width: 480px) {
+.cartHeader h1 {
+font-size: 28px;
+}
+
+.cartProductInfo h3 {
+font-size: 14px;
+}
+
+.checkoutBtn {
+padding: 12px;
+font-size: 14px;
+}
 }
