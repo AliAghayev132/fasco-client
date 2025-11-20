@@ -1,3 +1,7 @@
+// React Router
+import { Link, useLocation } from "react-router";
+import { useState } from "react";
+
 // Icons
 import {
   StarIcon,
@@ -9,9 +13,6 @@ import {
 // Styles
 import styles from "./Header.module.css";
 
-// React Router
-import { Link, useLocation } from "react-router";
-import { useState } from "react";
 
 export const Header = () => {
   const location = useLocation();
