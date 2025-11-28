@@ -1,0 +1,66 @@
+.modal__bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.modal__box {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.close__btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+}
+
+.label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.col {
+  flex: 1;
+}
+
+.pay__btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}

@@ -1,0 +1,396 @@
+/*#region product */
+.hero__section{
+    width: 100%;
+    max-width: 1280px;
+    
+    margin: 0 auto;
+    /* background-color: aqua; */
+    display: flex;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero__left{
+    width: 70px;
+    margin-left: 25px;
+    margin-top:20px ;
+    display: flex;
+    flex-direction: column;
+
+}
+.hero__part{
+    display: flex;
+   
+}
+.image__par{
+    width: 70px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.image__main{
+    width:450px;
+    height: 650px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.hero__right{
+
+}
+.brand__name{
+    font-family: "Volkhov";
+    font-size:16px ;
+    font-weight: 400px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+.product__name{
+     font-family: "Volkhov";
+    font-size:40px ;
+    font-weight: 400px;
+    margin-bottom: 10px;
+
+}
+.number{
+    margin-left: 8px;
+}
+.stars{
+    margin-bottom: 10px;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    
+}
+.price{
+    font-family: "Volkhov";
+    font-size:26px ;
+    font-weight: 400px;
+    margin-right: 20px;
+}
+.past__price{
+    font-family: "Volkhov";
+    font-size:16px ;
+    font-weight: 400px;
+    text-decoration: line-through;
+    color:#666666;
+    margin-right: 20px;
+}
+.price__btn{
+    width: 108px ;
+    height: 28px;
+    background-color: #DA3F3F;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+.eye__part{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.eye{
+     font-family: "Poppins";
+    font-size:16px ;
+    font-weight: 400px;
+    color:#666666;
+    margin-left: 20px;
+}
+
+.product__star{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.product__favorite{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #EEEEEE;
+    /* text-align: center; */
+     /* margin-left: 40px; */
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+
+}
+.sale__time{
+    width: 480px;
+    height: 54px;
+    border: 1px solid black;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+   align-items: center;
+   border-radius: 14px;
+   margin-bottom: 10px;
+   
+}
+.sale__title{
+    font-family: "Volkhov";
+    font-size:18px ;
+    font-weight: 400px;
+ 
+    color: #FF706B;
+}
+.sale__oclock{
+    font-family: "Volkhov";
+    font-size:18px ;
+    font-weight: 400px;
+    margin-left: 14px;
+    color: #FF706B;
+}
+.stock{
+    font-family: "Volkhov";
+    font-size:12px ;
+    font-weight: 400px; 
+    color: #666666;
+    margin-bottom: 10px;
+}
+.stock__bar{
+    width:480px ;
+    height: 6px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 16px;
+
+   
+}
+.product__size{
+    font-family: "Volkhov";
+    font-size:16px ;
+    font-weight: 700px; 
+    font-style: bold;
+    margin-bottom: 12px;
+}
+.size__btns{
+    margin-bottom: 14px;
+}
+.size__btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-family: "Poppins";
+    font-size:18px ;
+    font-weight: 400px; 
+    margin-left: 10px;
+}
+.size__btn__d{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-family: "Poppins";
+    font-size:18px ;
+    font-weight: 400px; 
+    margin-left: 10px;
+}
+.circle__c{
+    width: 46px;
+    height: 46px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.color__circle{
+    display: flex;
+    margin-bottom: 15px;
+}
+.color{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #8DB4D2;
+   
+}
+.color__b{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin-left: 10px;
+}
+.color__p{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFD1DC;
+    margin-left: 10px;
+}
+.quanity{
+    font-family: "Volkhov";
+    font-size:16px ;
+    font-weight: 400px; 
+    margin-bottom: 10px;
+}
+.main__btns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.math__btns{
+    width: 129px;
+    height: 40px;
+    border: 1px solid  #EEEEEE;
+    display: flex;
+}
+.minus{
+    width: 43px;
+    height: 40px;
+    border: none;
+}
+.count{
+    width: 43px;
+    height: 40px;
+    border: none;
+}
+.plus{
+    width: 43px;
+    height: 40px;
+    border: none;
+}
+.card{
+    width: 320px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.help{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #EEEEEE;
+}
+.help__b{
+    display: flex;
+    margin-bottom: 10px;
+}
+.help__t{
+    font-family: "Volkhov";
+    font-size:16px ;
+    font-weight: 400px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+.description{
+    margin-bottom: 26px;
+}
+.description__box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.description__t{
+    margin-left: 4px;
+    font-family: "Volkhov";
+    font-size:16px ;
+    font-weight: 400px;
+}
+.description__time{
+    font-family: "Poppins";
+    font-size:16px ;
+    font-weight: 400px;
+}
+.card__info{
+    width: 400px;
+    height: 100px;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__img{
+    width: 230px;
+    margin-bottom: 6px;
+}
+.card__d{
+    font-family: "Volkhov";
+    font-size:16px ;
+    font-weight: 400px;
+}
+/*#endregion product */
+
+
+
+
+
+
+/*#region Product media */
+@media only screen and (max-width: 1100px) {
+.image__main{
+    width: 400px;
+}    
+}
+@media only screen and (max-width: 1080px){
+  .hero__part{
+    justify-content: center;
+  }
+    .hero__section{
+        flex-direction: column;
+    }
+    .hero__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+} 
+@media only screen and (max-width: 530px) {
+    .image__main{
+        width: 350px;
+    }
+    .sale__time{
+        width: 330px;
+    }
+    .sale__title{
+        font-size: 14px;
+    }
+    .sale__oclock{
+        font-size: 14px;
+    }
+    .stock__bar{
+        width: 330px;
+    }
+    .main__btns{
+        flex-direction: column;
+    }
+    .math__btns{
+        margin-bottom: 12px;
+    }
+}
+@media only screen and (max-width: 474px){
+    .image__main{
+        width: 310px;
+    }
+    .card__info{
+        width: 330px;
+    }
+}
+/* 430px qeder */
+/*#endregion Product media */
+
+
+
+
+
+
+
+
+
+
+
+
