@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from "../HomePage.module.css";
-import instaimg1 from '../HomePageImg/instaimg1.jpg';
-import instaimg2 from '../HomePageImg/instaimg2.jpg';
-import instaimg3 from '../HomePageImg/instaimg3.jpg';
-import instaimg4 from '../HomePageImg/instaimg4.jpg';
-import instaimg5 from '../HomePageImg/instaimg5.jpg';
-import instaimg6 from '../HomePageImg/instaimg6.jpg';
-import instaimg7 from '../HomePageImg/instaimg7.jpg';
+import instaimg1 from '@/assets/images/instaimg1.jpg';
+import instaimg2 from '@/assets/images/instaimg2.jpg';
+import instaimg3 from '@/assets/images/instaimg3.jpg';
+import instaimg4 from '@/assets/images/instaimg4.jpg';
+import instaimg5 from '@/assets/images/instaimg5.jpg';
+// import instaimg6 from '@/assets/images/instaimg6.jpg';
+import instaimg7 from '@/assets/images/instaimg7.jpg';
 
 
 export const InstagramSection = () => {

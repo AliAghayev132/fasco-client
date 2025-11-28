@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../../HomePage.module.css";
-import cardImg1 from '../../HomePageImg/cardImg1.jpg';
+import cardImg1 from '@/assets/images/cardImg1.jpg';
 
 export const Card = ({ product }) => {
     return (

@@ -1,14 +1,19 @@
+// React
 import React from 'react'
+
+//Styles
 import styles from "../HomePage.module.css";
-import img1 from '../HomePageImg/img1.png';
-import img2 from '../HomePageImg/img2.png';
-import img3 from '../HomePageImg/img3.png';
-import img4 from '../HomePageImg/img4.jpg';
-import CK from '../HomePageImg/CK.png';
-import LV from '../HomePageImg/LV.png';
-import prada from '../HomePageImg/prada.png';
-import denim from '../HomePageImg/denim.png';
-import chanel from '../HomePageImg/chanel.png';
+
+// Images
+import CK from '@/assets/images/ck.png';
+import LV from '@/assets/images/lv.png';
+import img1 from '@/assets/images/img1.png';
+import img2 from '@/assets/images/img2.png';
+import img3 from '@/assets/images/img3.png';
+import img4 from '@/assets/images/img4.jpg';
+import prada from '@/assets/images/prada.png';
+import denim from '@/assets/images/denim.png';
+import chanel from '@/assets/images/chanel.png';
 
 export const HeroSection = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../HomePage.module.css";
-import newsletterimg1 from '../HomePageImg/newsletterimg1.png';
-import newsletterimg2 from '../HomePageImg/newsletterimg2.png';
+import newsletterimg1 from '@/assets/images/newsletterimg1.png';
+import newsletterimg2 from '@/assets/images/newsletterimg2.png';
 
 export const NewsletterSection = () => {
   return (
