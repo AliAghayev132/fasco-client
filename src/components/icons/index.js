@@ -6,3 +6,6 @@ export * from "./EmptyIcon";
 export * from "./ShareIcon";
 export * from "./CompareIcon";
 export * from "./QuestionIcon";
+export * from "./BasketIcon";
+export * from "./SearchIcon";
+export * from "./ProfileIcon";
