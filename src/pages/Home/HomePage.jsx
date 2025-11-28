@@ -1,10 +1,22 @@
-import styles from "./HomePage.module.css";
+import { HeroSection } from "./HomeSections/HeroSection";
+import { InstagramSection } from "./HomeSections/InstagramSection";
+import { NewsletterSection } from "./HomeSections/NewsletterSection";
+import { NewArrivalsSection } from "./HomeSections/NewArrivalsSection";
+import { PromoBannerSection } from "./HomeSections/PromoBannerSection";
+import { DealOfMonthSection } from "./HomeSections/DealOfMonthSection";
+import { TestimonialsSection } from "./HomeSections/TestimonialsSection";
 
 
 export const HomePage = () => {
     return (
-        <div className={styles.container}>
-            <h1>Home</h1>
+        <div>
+            <HeroSection/>
+            <DealOfMonthSection/>
+            <NewArrivalsSection/>
+            <PromoBannerSection/>
+            <InstagramSection/>
+            <TestimonialsSection/>
+            <NewsletterSection/>
         </div>
     )
 }
