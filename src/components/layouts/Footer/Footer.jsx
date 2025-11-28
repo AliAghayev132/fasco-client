@@ -8,7 +8,7 @@ import Girl from "@/assets/images/footer.girl.png";
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles["footer__hero"]}>
+      {/* <div className={styles["footer__hero"]}>
         <img
           src={Boy}
           alt="boy"
@@ -35,7 +35,7 @@ export const Footer = () => {
           alt="girl"
           className={`${styles["footer__hero-img"]} ${styles["footer__hero-img--right"]}`}
         />
-      </div>
+      </div> */}
 
       <div className={styles["footer__bottom"]}>
         <span className={styles["footer__logo"]}>FASCO</span>
